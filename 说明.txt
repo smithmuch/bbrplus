@@ -1,21 +1,21 @@
-Èç¹û²»ÄÜÖ±½Ó°²×°bbr plus£¬¾ÍÏÈ°²×°±¦Ëş£¬ÔÙ°²×°ÈñËÙ£¬×îºóÔÙ°²×°bbr plus¡£
+å¦‚æœä¸èƒ½ç›´æ¥å®‰è£…bbr plusï¼Œå°±å…ˆå®‰è£…å®å¡”ï¼Œå†å®‰è£…é”é€Ÿï¼Œæœ€åå†å®‰è£…bbr plusã€‚
 
-bbr plus£º
+bbr plusï¼š
    yum -y install wget
-wget "https://github.com/smithmuch/bbrplus/blob/master/ok_bbrplus_centos.sh" && chmod +x ok_bbrplus_centos.sh && ./ok_bbrplus_centos.sh
-°²×°ºó£¬Ö´ĞĞuname -r£¬ÏÔÊ¾4.14.90ÔòÇĞ»»ÄÚºË³É¹¦
-Ö´ĞĞlsmod | grep bbr£¬ÏÔÊ¾ÓĞbbrplusÔò¿ªÆô³É¹¦
+wget "https://raw.githubusercontent.com/smithmuch/bbrplus/master/ok_bbrplus_centos.sh" && chmod +x ok_bbrplus_centos.sh && ./ok_bbrplus_centos.sh
+å®‰è£…åï¼Œæ‰§è¡Œuname -rï¼Œæ˜¾ç¤º4.14.90åˆ™åˆ‡æ¢å†…æ ¸æˆåŠŸ
+æ‰§è¡Œlsmod | grep bbrï¼Œæ˜¾ç¤ºæœ‰bbrplusåˆ™å¼€å¯æˆåŠŸ
 
 
 
-°²×°ÈñËÙ:
+å®‰è£…é”é€Ÿ:
 
-1¡¢¸üĞÂcentos 7.x ÄÚºË¡£
+1ã€æ›´æ–°centos 7.x å†…æ ¸ã€‚
 
 rpm -ivh http://soft.91yun.org/ISO/Linux/CentOS/kernel/kernel-3.10.0-229.1.2.el7.x86_64.rpm --force
 
 
-2¡¢²é¿´ÄÚºËÊÇ·ñ¸üĞÂ³É¹¦¡£¿´¿´ÊÇ·ñ´æÔÚkernel-3.10.0-229.1.2.el7.x86_64ÄÚºË£¬Èç¹ûÏÔÊ¾ÀïÃæÓĞÕâ¸öÄÚºË¾Í¶ÔÁË¡£ ÖØÆô£¬²é¿´ÄÚºËÊÇ·ñ¸ü»»³É¹¦¡£
+2ã€æŸ¥çœ‹å†…æ ¸æ˜¯å¦æ›´æ–°æˆåŠŸã€‚çœ‹çœ‹æ˜¯å¦å­˜åœ¨kernel-3.10.0-229.1.2.el7.x86_64å†…æ ¸ï¼Œå¦‚æœæ˜¾ç¤ºé‡Œé¢æœ‰è¿™ä¸ªå†…æ ¸å°±å¯¹äº†ã€‚ é‡å¯ï¼ŒæŸ¥çœ‹å†…æ ¸æ˜¯å¦æ›´æ¢æˆåŠŸã€‚
 
 rpm -qa | grep kernel
 reboot

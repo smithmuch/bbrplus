@@ -1,0 +1,22 @@
+如果不能直接安装bbr plus，就先安装宝塔，再安装锐速，最后再安装bbr plus。
+
+bbr plus：
+   yum -y install wget
+wget "https://github.com/smithmuch/bbrplus/blob/master/ok_bbrplus_centos.sh" && chmod +x ok_bbrplus_centos.sh && ./ok_bbrplus_centos.sh
+安装后，执行uname -r，显示4.14.90则切换内核成功
+执行lsmod | grep bbr，显示有bbrplus则开启成功
+
+
+
+安装锐速:
+
+1、更新centos 7.x 内核。
+
+rpm -ivh http://soft.91yun.org/ISO/Linux/CentOS/kernel/kernel-3.10.0-229.1.2.el7.x86_64.rpm --force
+
+
+2、查看内核是否更新成功。看看是否存在kernel-3.10.0-229.1.2.el7.x86_64内核，如果显示里面有这个内核就对了。 重启，查看内核是否更换成功。
+
+rpm -qa | grep kernel
+reboot
+uname -r
